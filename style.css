@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+#container {
+  width: 100vw;
+  height: 60vh;
+}
+
+#control-panel {
+  width: 90vw;
+  max-width: 600px;
+  margin: 1rem 0 3rem;
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#control-panel h2 {
+  margin-top: 0;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.slider-wrapper label {
+  flex: 1 0 100px;
+  font-size: 14px;
+}
+
+.slider-wrapper input[type="range"] {
+  flex: 1 1 auto;
+}
+
+#container {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  z-index: 0;
+}
+
+#control-panel {
+  position: relative;
+  z-index: 10;
+  background: #111;
+  /* make sure it’s below the canvas or nicely spaced */
+  margin-top: 1rem;
+}
